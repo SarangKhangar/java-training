@@ -22,7 +22,6 @@ public class test {
             prices[i] = sc3.nextInt();
             Arrays.sort(prices);
         }
-       // Arrays.sort(prices);
         System.out.println(getMaxToys(prices,money));
     }
 
@@ -36,8 +35,8 @@ public class test {
             sum=count=0;
             for(int j=i; j<prices.length; j++){
                 if(sum+prices[j]<=money){
-                    count++;
-                    sum=sum+prices[i];
+                    count=count+1;
+                    sum=sum+prices[j];
                     maximun = Math.max(count, maximun);
                 }
                 else{
