@@ -20,7 +20,6 @@ public class test {
         int[] prices = new int[n];
         for(int i=0; i<n; i++){
             prices[i] = sc3.nextInt();
-            Arrays.sort(prices);
         }
         System.out.println(getMaxToys(prices,money));
     }
